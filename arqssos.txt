@@ -1,0 +1,37 @@
+disciprina - s.o (arqssos)
+
+ementa - fundamentos, organizacao e arquitetura de sistemas operacionais, analisa conceitos de comunicacoes, escalonamento de processo, gerenciamento de memoria, sistema de arquivos e entrada & saída.
+
+thread - execucao de cima pra baixo.
+
+furkim - autista lvl 100000.00
+
+1 PROCESSO = 1 PROCESSADOR (NUCLEO)
+
+OBJETIVOS:
+- COMPREENDER A ORGANIZACAO DE SISTEMAS OPERACIONAIS
+- COMPREENDER COMO O SISTEMA OPERACIONAL REALIZA O GERENCIAMENTO DO HARDWARE.
+- INVESTIGAR A UTILIZACAO DE SISTEMAS OPERACIONAIS EM DIFERENTES AMBIENTES COMPUTACIONAIS.
+- ENTENDER COMO CADA ASPECTO DE UM SISTEMA OPERACIONAL PODE INLUENCIAR EM SEU DESEMPENHO.
+----------------------------------------
+S.O - software com duas funções especiais:
+    1° - gerenciar os recursos (de hardware & software) do computador 
+        -> decide quando, 'quem', como, por quanto tempo um recurso será utilizado
+        -> s.o só interage com outros programas, e não acessamos ele diretamente nunca.
+    2° - Passar uma imagem mais simples do hardware para o programa/programador (explicado acima) e não para o usuário
+------------------------------
+GUI (graphic user interface)- mouse, etc.
+CLI (command line interface) - te mostra o prompt e o cursor, tipo terminal & cmd (e quando não tinha interface gráfica).
+
+núcleo: responsável pela gerencia do processador, tratamento de interrupcoes, comunicacao e sincronizacao de processos 
+
+o s.o consegue simultaneamente rodar outro aplicativo em caso de um processador com um só core , troca o s.o pelo software rápidamente, parecendo rodar tudo ao mesmo tempo.
+
+kernel = programa essencial no nucleo do processador que executa o tempo todo.
+
+----------------------
+
+1 geracao de computadores (1945-55):
+    -valvulas , plugs em paineis. (ligada e desligada -> 0 e 1).
+
+
