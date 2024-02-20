@@ -33,5 +33,5 @@ kernel = programa essencial no nucleo do processador que executa o tempo todo.
 
 1 geracao de computadores (1945-55):
     -valvulas , plugs em paineis. (ligada e desligada -> 0 e 1).
-
+2 geracao de computadores (1955-65) Transistores e sistemas em lotes (batch) - mainframes. Formados com transistores (semi-condutores, pois é mais fácil de 0 e 1.)
 
