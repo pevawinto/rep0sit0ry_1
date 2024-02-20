@@ -1,0 +1,9 @@
+DESENVOLVIMENTO DE SISTEMAS WEB 1 - Fernando Vieira
+
+Ementa: Frameworks e tecnologias para criação de design responsivo, geração de conteúdo dinâmico no lado do servidor, interação com o usuário e atualização de conteúdo no lado do cliente.
+
+Objetivo: Desenvolver páginas Web interativas, responsivas e dinâmicas a partir do uso de frameworks e tecnologias de script.
+
+Navegador nao entende java, JSP converte isso para html, para entao ele poder entender. model - classe java, view - html com java, controller - classe java.
+
+Apache tomcat - container de servers - servidor.
