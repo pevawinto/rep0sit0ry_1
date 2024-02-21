@@ -33,5 +33,31 @@ kernel = programa essencial no nucleo do processador que executa o tempo todo.
 
 1 geracao de computadores (1945-55):
     -valvulas , plugs em paineis. (ligada e desligada -> 0 e 1).
-2 geracao de computadores (1955-65) Transistores e sistemas em lotes (batch) - mainframes. Formados com transistores (semi-condutores, pois é mais fácil de 0 e 1.)
+2 geracao de computadores (1955-65) Transistores e sistemas em lotes (batch) - mainframes. 
+    -Formados com transistores (semi-condutores, pois é mais fácil de 0 e 1.) <-- Silício.
+    -Cartão perfurado, lotes/batch.
+3 geração - CLs e multiprogramação (1965 - 1980) - divisão da memória.
+    - Pode usar mais processos.
+    - Muitas coisas atuais são só melhorias do que surgiu nessa geração
+    - Unix apareceu aqui.
+4 geração (1980-presente) Computadores Pessoais.
+    - LSI (Large Scale Integration) - Diminuir o tamanho de praticamente todas as peças. Circuitos ficam muito mais compactos.
+    
 
+----------------------------------------------------------
+Caracteristicas Desejaveis do SO
+    - Eficiencia: Baixo tempo de resposta, alta taxa de proc.
+Confiabilidade
+    - Pouca incidencia de falha e exaticao dos dados computados.
+Mantenabilidade
+    - Facilidade de correção ou incorporação de novas característica.
+Pequena dimensão
+    - Simplicidade e baixa ocupação da memória
+Concorrência 
+    - Capacidade de manutençãde tarefas concorrentes.
+Compartilhamento de recursos
+    -Gerencia de recursos de hardware e software compartilhados.
+
+Unix foi o primeiro sistema operacional 'moderno'. A maioria dos s.os atuais tem algo do Unix.
+Sua primeira versão foi escrita em linguagem assembly e reescrito em C, em 1973.
+Como se tivesse evoluido, hoje se encontra em partes dos seus próprios sistemas operacionais atuais.
