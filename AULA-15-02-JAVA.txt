@@ -63,7 +63,6 @@ Fontes para essa matéria: Refactoring Guru. => https://refactoring.guru/
 -------------------------------------
 
 Singleton:
- 
 Classe so tem uma instância, enquanto provém acesso global para a mesma.
 Transforma a variavel basicamente numa 'variável global', podendo ser acessada por qualquer um no programa.
 A Classe só vai ter uma única instância.
@@ -73,6 +72,9 @@ O construtor vai ser padrão privado, para prevenir que outros objetos usem o op
 Cria um métido estático (método de classe, que não depende da instância do objeto) que age como o construtor.
 
 Criar pacote apenas para o dataset.
+
+Singleton não funciona só para fazer controle.
+
 -------------------------------------------
 
 Padrão De Projeto DAO - Data Access Object
