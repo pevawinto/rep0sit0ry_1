@@ -1,0 +1,92 @@
+
+
+Pular para o conteúdo
+Como usar o E-mail de Instituto Federal de Educação, Ciência e Tecnologia de São Paulo com leitores de tela
+Ativar as notificações na área de trabalho para o E-mail de Instituto Federal de Educação, Ciência e Tecnologia de São Paulo.   OK  Agora não(a)
+Conversas
+Usando 0,07 GB
+Regulamentos do programa
+Powered by Google
+Última atividade da conta: há 0 minuto
+Detalhes
+
+diagrama de classes = uml
+grifado = estático
+italico = abstrato
+
+no diagrama do projeto do filme, 'director' na seta também é um atributo de movie.
+
+construtor só é vazio quando é definido como vazio, normalmente nao ha construtores vazios.
+Se o construtor nao for definido, ele vai ser vazio, mas sempre publico, o que pode nao ser bom.
+
+
+
+public class Director {
+    private String name;
+
+    
+depois uma chamada public class Actor com uma String name e int yearOfBirth
+depois bota construtor e set ge, depois um setAge
+
+class Mpvie
+private String title;
+private int year;
+private int mark;
+
+composição:
+
+private Director director;
+private List<Actor> actors;
+
+construtor
+gets sets
+
+private boolian validateMark (int mark)
+    return mark >= 0; && mark <= 5;
+
+sgbd = sistema gerenciador de banco de dados.
+persistir dado = gravá-los.
+----------------------------------
+
+jeito bom de gravar dados sem banco = interface list, no caso, em ator e diretor.
+
+--------------------------------------
+
+Design Patterns/Padrões de Projetos
+
+Soluções generalistas para problemas recorrentes, conceitualmente; não se trata de framework ou código pronto.
+
+como se fosse uma planta pré-projetada que você pode alterar para se adequar melhor.
+é como um 'molde'.
+
+Fontes para essa matéria: Refactoring Guru. => https://refactoring.guru/
+-------------------------------------
+
+Singleton:
+ 
+Classe so tem uma instância, enquanto provém acesso global para a mesma.
+Transforma a variavel basicamente numa 'variável global', podendo ser acessada por qualquer um no programa.
+A Classe só vai ter uma única instância.
+
+O construtor vai ser padrão privado, para prevenir que outros objetos usem o operador 'new' com classe singleton.
+
+Cria um métido estático (método de classe, que não depende da instância do objeto) que age como o construtor.
+
+Criar pacote apenas para o dataset.
+-------------------------------------------
+
+Padrão De Projeto DAO - Data Access Object
+
+DAO é o padrao utilizado para abstrair e encapsular todos os acessos do data source.
+
+VANTAGEM: Tem uma camada de software que fala com a fonte de dados. Se realocada, nao muda o resto da interface.
+
+Componentes:
+Interface DAO, Implementação Concreta, etc.
+
+Uma interface para cada objeto.
+Dentro da interface existem apenas os métodos, E quando for usar, usar na interface. A implementacao ainda vai ser um singleton no nosso caso.
+
+Chave/ID em banco de dados: identifica o elemento.
+
+O DAO é uma camada de dados. DAO Abstrai o acesso aos dados.
