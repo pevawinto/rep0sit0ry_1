@@ -1,0 +1,174 @@
+MVC = Model-view-controller
+DTO = Data Transfer Object. Classe que transporta objetos. Encapsula os dados de um objeto em uma estrutura simples e independente de tecnologia.
+
+Interação com o usuário não se mistura com a criação de dados.
+---------------------------------------------
+MVC
+
+Cada responsabilidade é bem definida, ou seja, não se mistura coisa de 'Model' com 'View', por exemplo.
+
+VIEW = Conversa com controller. Interação com o usuario. Funciona a partir de um evento que o usuario vai interagir. Conhece, mas nao trabalha/modfica o modelo.
+CONTROLLER = Conversa com model. Modula a conversa entre model e view. Controller é disparado após interação do usuário com o view.
+MODEL = Não é acessado por view.
+
+Model = Lógica da aplicação. Regra de negócio, persistência com o banco de dados, classes de entidades. Lógica dos dados. CRUD tá em model.
+VIEW = Visão do usuário. Parte que sistema que interage com o usuário. String, ponteiro, etc.
+CONTROLLER = Uma camada intermediária entre as duas outras. Não sabe fazer, mas sabe quem chamar, trabalhar com a informação e conversa com quem resolve.
+  
+Model também engloba o DAO. Dentro dele, como por exemplo, numa aplicacao web com springboot, usa-se o MVC, e, no model, tem 3 subdivisoes: service, entity, dao.
+
+
+DTO tem sua propria pasta, nao fica nas outras. 	
+controller -> TarefaController
+model -> Tarefa
+view -> Console
+     -> TarefaView
+
+
+tarefa
+
+private string descricao
+private boolean oncluida
+
+public tarefa string destricao)
+this.descricao - descricao
+concluida = false;
+}
+
+public String getdescricao(){
+return descricao;
+}
+
+public boolean isConcluida
+return ocncluida
+
+public void marcarComoConcluida{
+this.concluida = true;
+}
+
+package view
+
+public class ocncole
+privade Scanner scanner;
+private TarefaView tarefaview;
+
+publicConsole(){
+scanner = new scanner system.in
+tarefaview = new tarefaview();
+
+public void run(){
+int opcao;
+do{
+sout: escolha
+nova tarefa
+listar tarefas
+concluir tarefa
+opcao = scanner.nextInt();
+scanner.nextline()
+switch opcao
+case 1: tarefaview.novatarefa(scanner)
+break;
+case 2
+t
+}
+while (opcao=!4)
+}
+-----------------
+import controller.tarefacontroller
+import model.java
+import java.util.list
+import java.util.scanner;
+
+public tarefaview
+
+private tarefaController controller; // injetou controller
+
+public tarefaView(){
+controller = new TarefaController(this); // vai criar um objeto na classe tarefaController, o this é usado para 'apontar' um para o outro. se torna 'chamável'
+}
+
+apresentaMensagem(String msg){}
+apresentarTarefas(){}
+apresentarTarefas(List<Tarefa> tarefas){}
+novaTarefa (Scanner input){}
+concluirTarefa (Scanner input){}
+
+
+
+
+public void apresentaMensagem(String msg)
+if(!msg.isEmpty()){
+System.out.println("--------------------");
+System.out.println("msg");
+System.out.println("--------------------");
+}}
+
+public void apresentarTarefas(List<Tarefa> tarefas){
+if(tarefas.isEmpty()){
+apresentamentagem("Não existem dados para exibir");
+}else{
+System.out.println("Tarefas:");
+int i - 1;
+for(Tarefa = 1; Tarefa <=4; Tarefa++);      
+
+
+
+-
+public void apresentarTarefas(){
+controller.listarTarefas();
+}
+public void novaTarefa(Scanner input){
+System.out.println("Nova Tarefa");
+System.out.println("Descricao");
+var descricao = input.nextLine();
+controller.adicionartarefa(descricao);
+}
+public void concluirTarefa
+controller.listarTarefas();
+System.out.println("Selecione uma tarefa");
+var posição = inpux.nextInt();
+controller.concluirTarefa(posicao);
+}
+
+======controller========
+package controller;
+import model.Tarefa;
+import view.tarefaview;
+
+import arraylist
+import util.list
+
+public class TarefaController{
+private List<Tarefa> tarefas;
+private TarefaView view;
+
+public TarefaController(TarefaView view){}
+public void adctarefa(String descricao){}
+concluirtarefa intposicao
+void listartarefas
+
+
+public void adicionar tarefa (string descricao)
+var tarefa = new tarefa ()descricao
+tarefas;add(tarefa)
+view.apresentaMensagem("ADC)
+
+public void concluirTarefa(int posicao)
+posicao--; //pra arranjar o array que tem 1 a mais
+if(posicao>=0 && posicao < tarefas.size()){
+tarefas.get(posicao).marcarComoConcluida();
+view.apresentaMensagem("Tarefa concluida com sucesso");
+else{view.apresentamensagem("Tarefa nao esta na lista");
+}
+}
+
+public void listarTarefas(){
+view.apresentarTarefas(tarefas);
+}
+
+
+=-=-=
+
+main
+new Console().run();
+}
