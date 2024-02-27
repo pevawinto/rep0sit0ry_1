@@ -1,0 +1,43 @@
+Java EE - Introdução
+----------------------------------------------
+S.E - Standard Edition (versão vista antes)
+M.E - Micro Edition (dispositivo embarcado - e antigamente em celulares)
+E.E - Enterprise Edition 
+
+Cartão de crédito roda um java
+
+Em modelo de objetos, usaremos java beans. Junto com o server, controlaremos.
+JavaBean - classe que tem atributos e métodos mas não tem regra de negócio.
+
+Nao vamos ter data access layer esse semestre.
+
+Como o EE é apenas um conjunto de especificações, é necessário usar uma implementação, é como se fosse uma documentação com regras que empresas e implementações para a plataforma.
+
+Usaremos o TOMCAT. Implementação de código aberto.
+
+Ele implementa a parte de servlets e JSPs. É considerado um contêiner de servlets.
+
+Um "servlet" é uma classe Java no Java EE que obedece à API Java Servlet, um protocolo pelo qual uma classe Java pode responder a requisições.
+Ele estende a funcionalidade de um server web, gerando conteúdo dinâmico.
+
+E um contâiner é uma caixa que contém coisas, uma analogia do java para o Tomcat ser o contâiner para os nossos servlets serem executados. Ele vai receber requisições http e redirecioná-las ao servlet necessário.
+
+Ele pode atuar como um server Web, e, ao mesmo tempo, será o container para executar nossas instruções/aplicações. Com o deploy feito no Tomcat, iniciaremos o servidor.
+
+Ao receber a requisicao, ele processa e responde o cliente.
+
+Pra definir um servlet, usamos o: javax.servlet e o javax.servlet.http
+
+Interface Servlet:
+    -O servlet declara os métodos básicos que qualquer servlet deve implementar.
+
+Classe asbtrata GenericServlet:
+    -Implementa a interface Servlet e representa servlets que sejamindependentes de protocolo.
+
+Classe abstrata HttpServlet:
+- Estende a classe GenericServlet. (adc métodos novos)
+
+*Estudar como os processos se executam, as fases.
+
+TOMCAT vai instanciar os dois objetos de HTTPSERVLETRESPONSE, precisaremos apenas fazer o processamento.
+
