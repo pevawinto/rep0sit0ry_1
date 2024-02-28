@@ -4,8 +4,6 @@ ementa - fundamentos, organizacao e arquitetura de sistemas operacionais, analis
 
 thread - execucao de cima pra baixo.
 
-furkim - autista lvl 100000.00
-
 1 PROCESSO = 1 PROCESSADOR (NUCLEO)
 
 OBJETIVOS:
