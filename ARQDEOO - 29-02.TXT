@@ -1,0 +1,50 @@
+View tem uma interface e uma implementação
+
+Vector: Classe que trabalha com o vetor, de uma maneira diferente.
+É uma estrutura de dados que representa uma coleção ordenada de objetos, que podem crescer ou diminuir de tamanho dinamicamente.
+Dinamico e manipula elementos.
+Implementa a interface list, ou seja, oferece uma gama de metodos para manipular os elementos, tipo CRUD.
+Acesso por índice como arrays, e é sincronizado, onde várias threads podem acessar e modificar a lista simultaneamente. Por isso, é lento
+
+Vector<Grade> grades; como exemplo, nesse caso usamos o generics 'Grade'.
+
+Array list também é uma interpretação de interface list, mas o tamanho aumenta em 50%. Ex, de 10, pra 5.
+
+Em ambos os casos, é importante planejar a maneira de instanciar novos elementos, pois, se, por exemplo, voce quiser trabalhar com 400 objetos, crie com 500 para nao carregar muito a memória, o programa e o processador.
+
+No array list, não é sincronizado por padrão, ou seja, threads não acessam e manipulam a lista.
+
+-----------------------
+LinkedList tamém implementa interface list.
+Só que com lista duplamente encadeada, ou seja, cada elemento tem uma referencia para o proximo e o anterior da lista, ou seja, é eficiente para adicionar e remover itens.
+Não tem valor inicial. Não cria nós atoa. No linked list não é direto como no ArrayList, ou seja, vai um por um. Não é viável pois sobrecarrega.
+
+-------------------
+Iterator
+É um dos métodos que são implementados em objetos (grades.iterator).
+É um objeto de iteração, ou seja, passa a ser um ponteiro para a estrutura de dados
+
+Na linked list, o iterator guardaria a posição que é, ou seja, não funciona. Ele não recomeçaria nos nós, ficaria na mesma posição. 
+
+
+Interface list:
+Comum entre os 3
+Define um tipo de colecao ordenada que permite armazenar e manipular elementos de forma sequencial, indexada e repetida.
+**Programar para uma interface, não para uma implementação".
+
+Interface por flexibilidade, manitencao, abstracao, facilitacao, etc.
+
+o MÉTODO 'asList' faz o vetor devolver como list		
+
+Vararg = lista de argumetntos de comprimento variável
+Parâmetro seguido de reticências
+É o ultimo argumento do método	
+Não sabe quantos argumentos vai passar no metodo
+
+@Override: A sobrescrita de um método ocorre quando uma classe filha implementa um método que já existe numa classe mãe, alterando (sobrescrevendo) o comportamento existente.
+
+User user = (User) o ---> Casting, como se lancasse uma permissão para o objeto 'o'.
+
+Equals é utilizado para não haver repetição dos usuários na lista.
+
+
