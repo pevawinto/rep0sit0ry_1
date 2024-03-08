@@ -1,0 +1,61 @@
+Interface Set
+A interface set em Java é parte do framework de coleção da linguagem Java e representa uma coleção que não permite elementos duplicados.
+
+Sem duplicatas - não tem nenhuma repetição.
+Sem garantia de ordem (por não ter índice) - no list por exemplo o elemento é inserido ao final da lista, ordenando pela ordem de inserção. Fica bagunçado
+Iterator - pode-se iterar os elementos usando um loop for-each ou um iterator.
+Eficiente. Complexidade de tempo próxima a O(1).
+
+Classe HashSet
+
+Separa elementos, chama-se tabela de dispersão
+Colisao: Choque de região
+
+Funcao hash gera um valor entre 0 e o tamanho maximo da classe, que entrega o objeto em uma posição a partir dos dados. 
+Não se sabe a posição.
+Cada objeto gera uma única região, em uma situação perfeita.
+
+HashCode 
+Agrupa por semelhança.
+Cada instância é gerado um código diferente para usuários diferentes.
+
+Por exemplo transformar cada letra de um nome em seu respectivo número de posição do alfabeto e depois somá-as.
+
+Não existe GET por conta de não ser acessível a posição dos dados.
+-> usa-se o iterator.
+
+implementa o equals e a funcao hash de forma adequada para não haver objetos repetidos.
+---------------------------------------------------------------------------
+Árvore Binária de Busca (ABB)
+---------------------------------------------------------------------------
+TreeSet
+Árvore de Busca Binária
+--------------------------
+linkedhashset
+
+
+tabela de dispersao em lista de hashset
+
+ordem de insercao mantida
+eficiencia O(1)
+sem duplicatas
+----------------------------------------------------------------------------------
+Interface Queue - Faz a mesma coisa de uma Fila.
+---------------------------------------------------------------
+Map (associação chave-valor, sem repetir)
+-Não é collection
+2 chaves podem apontar para o mesmo valor mas uma chave só aponta para um valor.
+Chave única
+Sem garantia de ordem
+Recuperacao eficiente de valores
+
+Operações:
+-put
+-get
+-containsKey
+-keySet e values
+
+'private Map<2 generics> userMap;
+
+1 generico: chave
+2 generico: tipo do objeto
